@@ -29,8 +29,8 @@ function mouse() {
     for (let i = 0; i < circles.length; i++) {
         d = dist(mouseX, mouseY, circles[i].posX, circles[i].posY);
         if (d < circles[i].size / 2 &&
-            d > circles[i].size / 2 - 0.5 * (circles[i].size / 2) &&
-            circles[i].size >= 10) {
+            d > circles[i].size / 2 - 0.3 * (circles[i].size / 2) &&
+            circles[i].size >= 2) {
             circles[i].divide();
             circles.splice(i, 1);
         }
